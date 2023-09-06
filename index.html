@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wassup chat app</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    
+    <div class="nav">
+        <div class="logo">
+            <h3>CHATBOX</h3>
+        </div>
+        <button id="cut" onclick="buttonCut()"><i class="fa-solid fa-xmark fa-fade"></i></button>
+        
+        <div class="links">
+
+            <a href="https://github.com/Warlord64" data-tilt><i class="fa-brands fa-github"></i>Github</a>
+            <a class="linkedin" href="https://www.linkedin.com/in/aryan64" data-tilt><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+            <a class="insta" href="https://instagram.com/aryan_singh.dev?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" data-tilt><i class="fa-brands fa-instagram"></i>Instagram</a>
+    </div>
+    </div>
+    <section class="chat__section">
+        
+        <div class="message__area"></div>
+        <div>
+            <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
+            <button id="submit" onclick="submitButton()"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </section>
+
+    <button id="open" onclick="buttonOpen()">
+        <i class="fa-solid fa-bars fa-fade"></i>
+    </button>
+    <svg class="extra-one" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,0L48,37.3C96,75,192,149,288,160C384,171,480,117,576,112C672,107,768,149,864,144C960,139,1056,85,1152,74.7C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/4157b5f978.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>
